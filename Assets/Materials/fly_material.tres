@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ck8fspxjvjlkt"]
+
+[ext_resource type="Texture2D" uid="uid://bvomsrjr30tk0" path="res://Assets/Textures/fly_Ass.png" id="1_km6jl"]
+
+[resource]
+transparency = 3
+alpha_hash_scale = 2.0
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_km6jl")

@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://brt47tr2is70w"]
+
+[ext_resource type="Texture2D" uid="uid://tgjdgyqu1x1l" path="res://Assets/Textures/farting.png" id="1_w13wl"]
+
+[resource]
+albedo_texture = ExtResource("1_w13wl")
+uv1_scale = Vector3(2.625, 3.335, 2.625)

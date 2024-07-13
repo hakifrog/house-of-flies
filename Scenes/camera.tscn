@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dncgxy3sbj1vt"]
+
+[ext_resource type="Script" path="res://Scripts/CameraJoint.gd" id="1_lubt1"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dtkmv"]
+radius = 0.2
+
+[node name="CameraOrigin" type="Node3D"]
+script = ExtResource("1_lubt1")
+
+[node name="VerticalAxis" type="Node3D" parent="."]
+
+[node name="SpringArm3D" type="SpringArm3D" parent="VerticalAxis"]
+shape = SubResource("SphereShape3D_dtkmv")
+spring_length = 3.0
+
+[node name="Camera3D" type="Camera3D" parent="VerticalAxis/SpringArm3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)

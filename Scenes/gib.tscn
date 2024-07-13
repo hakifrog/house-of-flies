@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwlsfm36kxa6v"]
+
+[ext_resource type="Script" path="res://Scripts/gib.gd" id="1_xaugy"]
+[ext_resource type="AudioStream" uid="uid://7v72p5ooj1u7" path="res://Assets/Sound/SFX/GIB_BOUNCE.wav" id="2_pht7g"]
+
+[node name="Gib" type="RigidBody3D"]
+collision_layer = 4
+script = ExtResource("1_xaugy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+
+[node name="Bounce" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_pht7g")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
